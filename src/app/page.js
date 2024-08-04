@@ -12,7 +12,6 @@ export default function Home() {
 
       <div className="text-center">
         <button className="bg-green-600 py-2 px-6 rounded-full inline-flex gap-2 border-2 border-purple-700/50">
-        
         <UploadIcon />
         <span>Choose File</span>
         </button>
