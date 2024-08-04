@@ -1,21 +1,23 @@
+import DemoSection from "./components/DemoSection";
+import PageHeader from "./components/PageHeader";
+import UploadIcon from "./components/UploadIcon";
+
 export default function Home() {
   return (
-    <main className="p-4">
-      <header className="flex justify-between mb-4 max-w-2xl mx-auto">
-        <a href="">Caption Generator</a>
-        <nav className="flex gap-6">
-          <a href="">Home</a>
-          <a href="">Pricing</a>
-          <a href="">Contact</a>
-        </nav>
-      </header>
+    <>
+      <PageHeader 
+        h1Text={'Add Captions To Your Video'} 
+        h2Text={'Just Upload Your Video And We Will Do The Rest'} 
+      />
 
-      <div>
-        <h1>Add Captions to your videos</h1>
-        <h2>Just upload your videos and we will do the rest</h2>
+      <div className="text-center">
+        <button className="bg-green-600 py-2 px-6 rounded-full inline-flex gap-2 border-2 border-purple-700/50">
+        
+        <UploadIcon />
+        <span>Choose File</span>
+        </button>
       </div>
-
-      <div>Choose File</div>
-    </main>
+      <DemoSection />
+    </>
   );
 }
