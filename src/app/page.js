@@ -1,8 +1,10 @@
 import DemoSection from "./components/DemoSection";
 import PageHeader from "./components/PageHeader";
-import UploadIcon from "./components/UploadIcon";
+import UploadForm from "./components/UploadForm";
+
 
 export default function Home() {
+  
   return (
     <>
       <PageHeader 
@@ -11,10 +13,7 @@ export default function Home() {
       />
 
       <div className="text-center">
-        <button className="bg-green-600 py-2 px-6 rounded-full inline-flex gap-2 border-2 border-purple-700/50">
-        <UploadIcon />
-        <span>Choose File</span>
-        </button>
+        <UploadForm />
       </div>
       <DemoSection />
     </>
