@@ -1,6 +1,7 @@
 'use client';
 import ResultVideo from "@/components/ResultVideo";
-import TranscriptionEditor from "@/components/TranscriptionEditor";
+// import TranscriptionEditor from "@/components/TranscriptionEditor";
+import TranscriptionItem from "@/components/TranscriptionItem";
 import {clearTranscriptionItems} from "@/libs/awsTranscriptionHelpers";
 import axios from "axios";
 import {useEffect, useState} from "react";
@@ -51,7 +52,7 @@ export default function FilePage({params}) {
       <div className="grid sm:grid-cols-2 gap-8 sm:gap-16">
         <div className="">
           <h2 className="text-2xl mb-4 text-white/60">Transcription</h2>
-          <TranscriptionEditor
+          <TranscriptionItem
             awsTranscriptionItems={awsTranscriptionItems}
             setAwsTranscriptionItems={setAwsTranscriptionItems} />
         </div>
@@ -59,7 +60,8 @@ export default function FilePage({params}) {
           <h2 className="text-2xl mb-4 text-white/60">Result</h2>
           <ResultVideo
             filename={filename}
-            transcriptionItems={awsTranscriptionItems} />
+            //  transcriptionItems={awsTranscriptionItems} 
+            />
         </div>
       </div>
     </div>
