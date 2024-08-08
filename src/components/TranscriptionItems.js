@@ -1,4 +1,4 @@
-export default function TranscriptionItem({
+export default function TranscriptionItems({
     item,
     handleStartTimeChange,
     handleEndTimeChange,
