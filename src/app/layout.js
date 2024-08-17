@@ -16,12 +16,12 @@ export default function RootLayout({ children }) {
       <body className={inter.className + " bg-gradient-to-b from-bg-gradient-from to-bg-gradient-to min-h-screen text-white"}>
 
         <main className="p-4 max-w-2xl mx-auto">
-          <header className="flex justify-between my-8">
+          <header className="flex justify-between my-2 sm:my-8">
            <Link href="/" className="flex gap-1">
                 <SparklesIcon />
               <span>Caption Generator</span>
            </Link>
-           <nav className="flex gap-6 text-white/80">
+           <nav className="flex items-center gap-2 sm:gap-6 text-white/80 text-sm sm:text-bas">
               <Link href="/">Home</Link>
               <Link href="/pricing">Pricing</Link>
               <a href="/mailto:krishverma837@gmail.com">Contact</a>

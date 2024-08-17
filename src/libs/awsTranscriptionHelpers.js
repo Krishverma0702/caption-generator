@@ -25,6 +25,7 @@ export function clearTranscriptionItems(items) {
       // seq
       srt += i + "\n";
       // timestamps
+      
       const {start_time, end_time} = item; // 52.345
       srt += secondsToHHMMSSMS(start_time)
         + ' --> '
